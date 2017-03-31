@@ -1,0 +1,202 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: $grey-dark;
+	font-family: $roboto;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	padding-top: 78px;
+}
+
+h1 {
+	font-size: 28px;
+  font-weight: 700;
+  margin: 35px 0;
+  text-transform: uppercase;
+}
+
+a {
+	color: $grey-dark;
+	outline: none;
+	@include transition-property(all);
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-in-out);
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* Layout
+------------------------------------*/
+
+.section-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	padding-top: 40px;
+}
+
+.row {
+	width: 85%;
+	position: relative;
+}
+
+
+/* Home Page
+------------------------------------*/
+
+/* Search */
+
+.search-albums {
+	height: 0;
+	opacity: 0;
+	margin-bottom: 30px;
+	@include transition-property(all);
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-in-out);
+
+	&.open {
+		opacity: 1;
+		height: 60px;
+	}
+}
+
+/* Entry */
+
+.album-entry {
+	border-bottom: 1px solid $grey-light;
+	margin-bottom: 35px;
+	padding: 30px 0 60px;
+
+	.columns {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	&.change-view {
+		float: left;
+		width: 33.33333%;
+
+		.columns {
+			float: none;
+			width: 100%;
+		}
+
+		.album-genre,
+		.album-year {
+			display: none;
+		}
+
+		&:last-child {
+			border-bottom: 1px solid $grey-light;
+		}
+	}
+}
+
+
+/* Details */
+
+.album-cover img {
+	display: inline-block;
+	width: 100%;
+	max-width: 150px;
+}
+
+.album-details h1 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0 25px 0 0;
+	text-transform: none;
+}
+
+.album-details h2 {
+	font-weight: 400;
+}
+
+.album-genre {
+	text-align: center;
+}
+
+.album-year {
+	text-align: right;
+}
+
+
+/* Pagination
+------------------------------------*/
+
+.pagination {
+	display: block !important;
+	padding: 0 25px 30px;
+	text-align: center;
+
+	.page-numbers {
+		display: inline-block;
+		margin: 0 10px;
+		vertical-align: middle;
+	}
+
+	.current {
+		font-weight: 700;
+	}
+
+	.next {
+		position: absolute;
+		right: 0;
+	}
+
+	.prev {
+		position: absolute;
+		left: 0;
+	}
+
+	i {
+		font-size: 32px;
+		display: block;
+		vertical-align: middle;
+	}
+}
+
+
+/* Page Content
+------------------------------------*/
+
+.page-content {
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 25px 60px;
+
+	header {
+		padding: 10px 0;
+	}
+
+	p {
+		margin-bottom: 25px;
+	}
+}
+
+
+/* Misc.
+------------------------------------*/
+
+.wow {
+  visibility: hidden;
+}
+
+
+

@@ -1,0 +1,57 @@
+
+input[type=date], 
+input[type=datetime], 
+input[type=email], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=tel], 
+input[type=text], 
+input[type=time], 
+input[type=url], 
+textarea {
+	font-size: 16px;
+	outline: none;
+	padding: 15px;
+	-webkit-appearance: none;
+}
+
+label {
+	cursor: default;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+input[type="submit"] {
+	background: $grey-dark;
+	color: $white;
+	cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 20px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  @include border-radius(5px);
+}
+
+/* Gravity Forms
+------------------------------------*/
+
+.gform_wrapper {
+	margin-bottom: 25px;
+
+	.gfield {
+		margin: 25px 0;
+	}
+
+	.gfield_required,
+	.validation_error {
+		display: none;
+	}
+
+}

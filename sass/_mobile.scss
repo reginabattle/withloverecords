@@ -1,0 +1,67 @@
+
+
+@media only screen and (max-width:767px) {
+
+	.row {
+		width: auto;
+	}
+
+	.site-title a {
+		font-size: 18px;
+	}
+
+	.search-albums {
+		padding: 0 20px;
+	}
+
+	.album-list {
+
+		h1 {
+	    padding: 0;
+		}
+
+		.album-entry {
+			padding: 0 10px 30px;
+			width: 100% !important;
+		}
+
+		.album-cover {
+			width: 35% !important;
+		}
+
+		.album-details {
+			width: 60% !important;
+		}
+
+		.album-genre,
+		.album-year {
+			display: none;
+		}
+	}
+	
+}
+
+
+@media only screen and (max-width:520px) {
+
+	body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.site-title {
+		padding: 15px 20px;
+	}
+
+	.album-list {
+
+		h1 {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.album-details {
+			word-break: break-word;
+		}
+	}
+}
